@@ -1,0 +1,115 @@
+@media (min-width: 1601px) {
+    body {
+        --content-max-width: 1400px;
+        --h1-font-size: 32px;
+    }
+}
+
+@media (max-width: 1600px) {
+    body {
+        --content-max-width: 1150px;
+    }
+}
+
+@media (max-width: 1400px) {
+    body {
+        --content-max-width: 950px;
+        --h1-font-size: 28px;
+    }
+}
+
+@media (max-width: 1100px) {
+    body {
+        --content-max-width: 740px;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        --content-max-width: 600px;
+    }
+    
+    body > .body-wrapper {
+        padding: 0px 48px;
+        
+        flex-direction: column;
+    }
+    .body-wrapper > div {
+        position: initial;
+        top: initial;
+    }
+
+    aside {
+        width: -moz-fit-content;
+        width: fit-content;
+        flex-direction: row;
+    }
+    aside > img {
+        max-width: 30%;
+    }
+    aside > div {
+        margin-top: 0px;
+        margin-left: 24px;
+    }
+    footer {
+        position: fixed;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+    }
+    footer .tooltiptext {
+        margin-top: -72px;
+    }
+    footer .tooltiptext::after {
+        top: 100%;
+        border-color: var(--secondary-background-color) transparent transparent transparent;
+    }
+    main {
+        margin-bottom: 64px;
+    }
+    
+    .social-contact-section {
+        justify-content: stretch;
+    }
+
+    h1 {
+        text-align: left;
+    }
+    
+    h6 {
+        text-align: left;
+    }
+}
+
+@media (max-width: 580px) {
+    body {
+        --icon-gap: 8px;
+        --icon-height: 32px;
+        --icon-text-size: 24px;
+        --icon-text-weight: 700;
+        --navigation-root-padding-vertical: 16px;
+    }
+
+    aside {
+        flex-direction: column;
+    }
+    aside > img {
+        max-width: 60%;
+    }
+    aside > div {
+        margin-top: 24px;
+        margin-left: 0px;
+    }
+
+    .social-contact-section {
+        justify-content: center;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    h6 {
+        text-align: center;
+    }
+}
